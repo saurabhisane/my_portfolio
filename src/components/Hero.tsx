@@ -1,7 +1,19 @@
 
-import { ArrowDown, Github, Mail } from 'lucide-react';
+import { ArrowDown, Github, Mail, Download } from 'lucide-react';
 
 const Hero = () => {
+  const handleDownloadResume = () => {
+    // For now, we'll simulate the download. In a real app, this would call your backend
+    console.log('Downloading resume...');
+    // Example: window.open('/api/resume/download', '_blank');
+    
+    // Temporary simulation
+    const link = document.createElement('a');
+    link.href = '#';
+    link.download = 'john-doe-resume.pdf';
+    link.click();
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center px-6 py-20">
       <div className="container mx-auto text-center">
@@ -31,6 +43,13 @@ const Hero = () => {
             >
               View My Work
             </a>
+            <button
+              onClick={handleDownloadResume}
+              className="bg-olive-green text-white px-8 py-4 rounded-full font-semibold hover-lift shadow-lg flex items-center space-x-2"
+            >
+              <Download size={20} />
+              <span>Download Resume</span>
+            </button>
           </div>
 
           <div className="flex justify-center space-x-6 mb-16">
