@@ -1,12 +1,61 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useEffect, useRef } from 'react';
+import Header from '../components/Header';
+import Hero from '../components/Hero';
+import About from '../components/About';
+import Projects from '../components/Projects';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
 const Index = () => {
+  const sectionsRef = useRef<(HTMLElement | null)[]>([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-fade-in');
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
+      }
+    );
+
+    sectionsRef.current.forEach((section) => {
+      if (section) observer.observe(section);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+  const addToRefs = (el: HTMLElement | null) => {
+    if (el && !sectionsRef.current.includes(el)) {
+      sectionsRef.current.push(el);
+    }
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-desert-sand">
+      <Header />
+      <main>
+        <section ref={addToRefs} id="home">
+          <Hero />
+        </section>
+        <section ref={addToRefs} id="about">
+          <About />
+        </section>
+        <section ref={addToRefs} id="projects">
+          <Projects />
+        </section>
+        <section ref={addToRefs} id="contact">
+          <Contact />
+        </section>
+      </main>
+      <Footer />
     </div>
   );
 };
