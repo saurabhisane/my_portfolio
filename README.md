@@ -6,10 +6,10 @@
 
 <br/>
 
-[![Portfolio Website](https://img.shields.io/badge/🌐_Portfolio-Live_Demo-667EEA?style=for-the-badge&logoColor=white&labelColor=000)](https://saurabhisane.github.io/my_portfolio)
-[![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/saurabhisane/)
+[![Portfolio Website](https://img.shields.io/badge/🌐_Portfolio-Live_Demo-667EEA?style=for-the-badge&logoColor=white&labelColor=000)](https://reliable-bavarois-3e85ca.netlify.app/)
+[![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/saurabh-isane-479a0a257/?originalSubdomain=in)
 [![GitHub](https://img.shields.io/badge/🚀_GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/saurabhisane)
-[![Email](https://img.shields.io/badge/📧_Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:saurabhisane9921@gmail.com)
+[![Email](https://img.shields.io/badge/📧_Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:isanesaurabh@gmail.com)
 
 <br/>
 
@@ -68,10 +68,10 @@
 <div align="center">
 
 ### 🖥️ **Desktop Experience**
-![Desktop View](./screenshots/desktop-view.png)
+![Desktop View](public/ss.jpg)
 
 ### 📱 **Mobile Experience**  
-![Mobile View](./screenshots/mobile-view.png)
+![Mobile View](public/ss2.jpg)
 
 <sub>📸 *Screenshots are located in the `screenshots/` directory - update paths as needed*</sub>
 
@@ -224,45 +224,6 @@ my_portfolio/
 </td>
 </tr>
 </table>
-
-</div>
-
----
-
-## 📊 **GitHub Analytics**
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=saurabhisane&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=saurabhisane&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117)
-
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=saurabhisane&theme=tokyonight&hide_border=true&background=0D1117)
-
-</div>
-
----
-
-## 💬 **Let's Connect & Collaborate!**
-
-<div align="center">
-
-*Always excited to discuss new opportunities, share knowledge, and build amazing things together!*
-
-<br/>
-
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-Visit_Now-667EEA?style=for-the-badge&logoColor=white&labelColor=000)](https://saurabhisane.github.io/my_portfolio)
-[![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-Let's_Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/saurabhisane/)
-[![Email](https://img.shields.io/badge/📧_Email-Drop_a_Line-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:saurabhisane9921@gmail.com)
-[![GitHub](https://img.shields.io/badge/🚀_GitHub-Follow_Journey-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/saurabhisane)
-
-<br/>
-
-### 💭 **What I'm Currently Working On:**
-- 🔨 Building more exciting React projects
-- 📚 Learning Next.js and TypeScript
-- 🌱 Contributing to open source
-- 💡 Exploring new design patterns
 
 </div>
 
