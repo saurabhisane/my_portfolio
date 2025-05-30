@@ -4,45 +4,42 @@ import { Download, GraduationCap, Calendar, Award } from 'lucide-react';
 const Resume = () => {
   const education = [
     {
-      degree: "Bachelor of Computer Science",
-      institution: "University of Technology",
-      year: "2018-2022",
-      cgpa: "8.5/10",
-      description: "Specialized in Software Engineering and Web Development"
+      degree: "Bachelor of Information Technology",
+      institution: "Pimpri Chinchwad College of Engineering",
+      year: "2022-2026",
+      cgpa: "7.5/10",
+      description: "Pursuing a degree in Information Technology with a focus on software development and mobile applications."
     },
     {
       degree: "Higher Secondary Certificate",
-      institution: "St. Mary's College",
-      year: "2016-2018",
+      institution: "Moolji jetha college, Jalgaon",
+      year: "2020-2022",
+      percentage: "72%",
+      description: "Completed my HSC with a focus on Science and Mathematics."
+    },
+    {
+      degree: "Secondary School Certificate",
+      institution: "New English School, Nashirabad, Jalgaon",
+      year: "2021-2020",
       percentage: "92%",
-      description: "Science Stream with Computer Science"
+      description: "Achieved high marks in my SSC, laying a strong foundation in core subjects."
     }
   ];
 
   const experience = [
     {
-      role: "Full Stack Developer",
-      company: "Tech Solutions Inc.",
-      period: "2022 - Present",
-      description: "Developed and maintained web applications using React, Node.js, and MongoDB."
+      role: "Design Intern",
+      company: "Frevolt",
+      period: "3 months ",
+      description: "Worked on design for social media handling and marketing materials, enhancing brand visibility through creative graphics.",
     },
-    {
-      role: "Frontend Developer Intern",
-      company: "StartupXYZ",
-      period: "2021 - 2022",
-      description: "Built responsive user interfaces and collaborated with design teams."
-    }
   ];
 
   const handleDownloadResume = () => {
-    // For now, we'll simulate the download. In a real app, this would call your backend
-    console.log('Downloading resume...');
-    // Example: window.open('/api/resume/download', '_blank');
-    
-    // Temporary simulation
+    // Provide the PDF document locally
     const link = document.createElement('a');
-    link.href = '#';
-    link.download = 'john-doe-resume.pdf';
+    link.href = '/Resume.pdf'; // Update this path to the correct location of your PDF file
+    link.download = 'saurabhisane.pdf';
     link.click();
   };
 

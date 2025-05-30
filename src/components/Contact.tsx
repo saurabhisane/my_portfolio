@@ -37,19 +37,19 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email',
-      value: 'john@example.com',
-      href: 'mailto:john@example.com'
+      value: 'isanesaurabh@gmail.com',
+      href: 'mailto:isanesaurabh@gmail.com'
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      value: '+91 7249096594',
+      href: 'tel:+7249096594'
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Pune, India',
       href: '#'
     }
   ];
@@ -102,7 +102,7 @@ const Contact = () => {
               <ul className="space-y-3 text-charcoal-gray/70">
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-burnt-sienna rounded-full"></div>
-                  <span>5+ years of professional experience</span>
+                  <span>Proven track record of delivering high-quality projects</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-olive-green rounded-full"></div>

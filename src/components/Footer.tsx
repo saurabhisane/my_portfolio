@@ -12,7 +12,7 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-bold mb-4">John Doe</h3>
             <p className="text-desert-sand/70 leading-relaxed">
-              Full Stack Developer passionate about creating amazing web experiences 
+              Flutter Developer passionate about creating amazing app and web experiences 
               and solving complex problems through code.
             </p>
           </div>
@@ -54,20 +54,20 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Get In Touch</h4>
             <div className="space-y-3">
               <a
-                href="mailto:john@example.com"
+                href="mailto:isanesaurabh@gmail.com"
                 className="flex items-center space-x-2 text-desert-sand/70 hover:text-burnt-sienna transition-colors"
               >
                 <Mail size={16} />
-                <span>john@example.com</span>
+                <span>isanesaurabh@gmail.com</span>
               </a>
               <a
-                href="https://github.com/johndoe"
+                href="https://github.com/saurabhisane"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-desert-sand/70 hover:text-burnt-sienna transition-colors"
               >
                 <Github size={16} />
-                <span>github.com/johndoe</span>
+                <span>github.com/saurabhisane</span>
               </a>
             </div>
           </div>
@@ -76,7 +76,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-desert-sand/20 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-desert-sand/70 mb-4 md:mb-0">
-            © {currentYear} John Doe. All rights reserved.
+            © {currentYear} Saurabh Isane. All rights reserved.
           </p>
           <div className="flex items-center space-x-2 text-desert-sand/70">
             <span>Made with</span>

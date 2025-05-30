@@ -1,11 +1,13 @@
-
 import { Code, Database, Globe, Smartphone } from 'lucide-react';
 
 const About = () => {
   const skills = [
-    { name: 'React/Next.js', level: 90, color: 'bg-burnt-sienna' },
+    { name: 'Flutter', level: 90, color: 'bg-burnt-sienna' },
     { name: 'Node.js', level: 85, color: 'bg-olive-green' },
-    { name: 'TypeScript', level: 88, color: 'bg-muted-purple' },
+    { name: 'Firebase', level: 80, color: 'bg-burnt-sienna' },
+    { name: 'Dart', level: 88, color: 'bg-muted-purple' },
+    { name: 'C', level: 80, color: 'bg-burnt-sienna' },
+    { name: 'C++', level: 80, color: 'bg-olive-green' },
     { name: 'Python', level: 80, color: 'bg-burnt-sienna' },
     { name: 'MongoDB', level: 75, color: 'bg-olive-green' },
     { name: 'PostgreSQL', level: 82, color: 'bg-muted-purple' },
@@ -13,16 +15,16 @@ const About = () => {
 
   const services = [
     {
+      icon: <Smartphone className="w-8 h-8" />,
+      title: 'Mobile Apps',
+      description: 'Building cross-platform mobile applications using Flutter.',
+      color: 'text-olive-green'
+    },
+    {
       icon: <Globe className="w-8 h-8" />,
       title: 'Web Development',
       description: 'Creating responsive, modern web applications with the latest technologies.',
       color: 'text-burnt-sienna'
-    },
-    {
-      icon: <Smartphone className="w-8 h-8" />,
-      title: 'Mobile Apps',
-      description: 'Building cross-platform mobile applications using React Native.',
-      color: 'text-olive-green'
     },
     {
       icon: <Database className="w-8 h-8" />,
@@ -45,36 +47,35 @@ const About = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-charcoal-gray mb-6">
             About Me
           </h2>
-          <p className="text-lg text-charcoal-gray/70 max-w-3xl mx-auto">
-            I'm a passionate full-stack developer with 5+ years of experience building 
-            web applications that solve real-world problems.
-          </p>
+            <p className="text-lg text-charcoal-gray/70 max-w-7xl mx-auto">
+            I'm a passionate developer building Flutter apps and crafting seamless user experiences through modern app and web technologies. I specialize in creating efficient, scalable, and innovative solutions for diverse challenges in the tech world. I love transforming ideas into functional, user-friendly mobile and web applications that solve real-world problems. I thrive on learning new technologies and continuously improving my skills to deliver the best possible results for my clients and users.
+            </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           <div>
-            <div className="w-80 h-80 mx-auto bg-pale-taupe rounded-2xl shadow-xl flex items-center justify-center mb-8 lg:mb-0">
-              <div className="w-64 h-64 bg-gradient-to-br from-burnt-sienna to-muted-purple rounded-full flex items-center justify-center text-white text-6xl font-bold">
-                JD
+            {/* <div className="w-70 h-120 rounded-2xl shadow-xl flex items-center justify-center mb-8 lg:mb-16 animate-fade-in"> */}
+              <div className="w-90 h-110 bg-white to-muted-purple rounded-full flex items-center justify-center text-white text-6xl font-bold border-4 border-burnt-sienna-200 shadow-lg">
+                <img
+                  src="/image.png"
+                  alt="Profile"
+                  className="w-full h-full object-cover rounded-full"
+                />
               </div>
             </div>
-          </div>
-          
+          {/* </div> */}
+
           <div className="space-y-6">
             <h3 className="text-2xl font-bold text-charcoal-gray mb-6">
               My Journey
             </h3>
             <p className="text-charcoal-gray/80 leading-relaxed">
-              Started my journey in computer science at university, where I discovered my passion 
-              for creating digital solutions. Since then, I've worked with startups and established 
-              companies, helping them bring their ideas to life through code.
+              I began my journey in Information Technology at Pimpri Chinchwad College of Engineering, Pune where I discovered a deep passion for building impactful digital solutions. Since then, I've focused on developing mobile and web apps using Flutter, delving into the world of Machine Learning to create intelligent systems, and honing my knowledge of databases, operating systems, and computer networks. This diverse skill set has enabled me to help projects evolve from ideas to polished, user-friendly experiences.
             </p>
             <p className="text-charcoal-gray/80 leading-relaxed">
-              I specialize in the MERN stack but I'm always learning new technologies. 
-              When I'm not coding, you can find me exploring new frameworks, contributing to 
-              open source, or sharing knowledge with the developer community.
+              While Flutter is my core strength, I'm always exploring new technologies and improving my skills. Outside of coding, I enjoy diving into new frameworks and sharing insights with the developer community.
             </p>
-            
+
             <div className="pt-6">
               <h4 className="text-xl font-semibold text-charcoal-gray mb-4">Skills & Technologies</h4>
               <div className="space-y-4">

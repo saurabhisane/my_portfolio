@@ -1,61 +1,61 @@
-
 import { ExternalLink, Github } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
+    
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.',
-      tech: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop&crop=center',
-      github: 'https://github.com/johndoe/ecommerce',
-      demo: 'https://ecommerce-demo.com',
-      borderColor: 'border-burnt-sienna'
-    },
-    {
-      title: 'Task Management App',
-      description: 'A collaborative project management tool with real-time updates, team chat, and progress tracking.',
-      tech: ['Next.js', 'PostgreSQL', 'Socket.io', 'Tailwind'],
-      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop&crop=center',
-      github: 'https://github.com/johndoe/taskmanager',
-      demo: 'https://taskmanager-demo.com',
+      title: 'Chat-R',
+      description: 'A cross-platform real-time chat app using Flutter and Firebase.',
+      tech: ['Flutter', 'Firebase', 'Dart'],
+      image: '/images2.jpg',
+      github: 'https://github.com/saurabhisane/Chat-R',
+      demo: '',
       borderColor: 'border-olive-green'
     },
     {
-      title: 'Weather Dashboard',
-      description: 'A beautiful weather application with location-based forecasts, interactive maps, and weather alerts.',
-      tech: ['React', 'Weather API', 'Chart.js', 'PWA'],
-      image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop&crop=center',
-      github: 'https://github.com/johndoe/weather',
-      demo: 'https://weather-demo.com',
+      title: 'Portfolio Website',
+      description: 'A clean and responsive portfolio showcasing projects, skills, and resume.',
+      tech: ['react', 'Tailwind CSS','typescript'],
+      image: '/images4.jpg',
+      github: 'https://github.com/saurabhisane/my_portfolio',
+      demo: 'https://saurabhisane.github.io/Portfolio-Website/',
       borderColor: 'border-muted-purple'
     },
     {
-      title: 'Social Media Analytics',
-      description: 'Analytics dashboard for social media managers with engagement metrics, content scheduling, and reports.',
-      tech: ['Vue.js', 'Express.js', 'Redis', 'D3.js'],
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop&crop=center',
-      github: 'https://github.com/johndoe/analytics',
-      demo: 'https://analytics-demo.com',
+      title: 'To-Do List App',
+      description: 'A minimal and intuitive app to manage daily tasks efficiently.',
+      tech: ['React', 'JavaScript', 'CSS'],
+      image: '/images5.jpg',
+      github: 'https://github.com/saurabhisane/To-Do-List-App',
+      demo: '',
       borderColor: 'border-burnt-sienna'
     },
     {
-      title: 'Learning Management System',
-      description: 'Educational platform with course management, video streaming, quizzes, and progress tracking.',
-      tech: ['React', 'Django', 'PostgreSQL', 'AWS'],
-      image: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=500&h=300&fit=crop&crop=center',
-      github: 'https://github.com/johndoe/lms',
-      demo: 'https://lms-demo.com',
-      borderColor: 'border-olive-green'
+      title: 'Inventory Forecasting System',
+      description: 'Forecasts future inventory needs using models like ARIMA and XGBoost.',
+      tech: ['Python', 'Flask', 'Time Series', 'XGBoost'],
+      image: '/images3.png',
+      github: 'https://github.com/saurabhisane/Inventary-Forecast-System',
+      demo: '',
+      borderColor: 'border-muted-purple'
     },
     {
-      title: 'Fitness Tracker',
-      description: 'Mobile-first fitness application with workout plans, nutrition tracking, and social features.',
-      tech: ['React Native', 'Firebase', 'Redux', 'Charts'],
-      image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=300&fit=crop&crop=center',
-      github: 'https://github.com/johndoe/fitness',
-      demo: 'https://fitness-demo.com',
-      borderColor: 'border-muted-purple'
+      title: 'Heart and Diabetes Prediction Model',
+      description: 'Predicts the likelihood of heart disease and diabetes using machine learning based on health metrics.',
+      tech: ['Python', 'Machine Learning', 'Jupyter Notebook'],
+      image: '/images.jpg',
+      github: 'https://github.com/saurabhisane/Heart-and-Diabetes-Prediction-model',
+      demo: '',
+      borderColor: 'border-burnt-sienna'
+    },
+    {
+      title: 'SI Store',
+      description: 'Flutter app for digital/physical product sales built for Smart India Hackathon.',
+      tech: ['Flutter', 'Firebase', 'Dart'],
+      image: '/images6.webp',
+      github: 'https://github.com/saurabhisane/SI_Store',
+      demo: '',
+      borderColor: 'border-burnt-sienna'
     }
   ];
 
@@ -93,14 +93,16 @@ const Projects = () => {
                   >
                     <Github size={20} className="text-charcoal-gray" />
                   </a>
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-white/90 p-2 rounded-full hover:bg-white transition-colors"
-                  >
-                    <ExternalLink size={20} className="text-charcoal-gray" />
-                  </a>
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-white/90 p-2 rounded-full hover:bg-white transition-colors"
+                    >
+                      <ExternalLink size={20} className="text-charcoal-gray" />
+                    </a>
+                  )}
                 </div>
               </div>
 
@@ -116,10 +118,13 @@ const Projects = () => {
                   <span
                     key={tech}
                     className={`skill-badge ${
-                      techIndex % 4 === 0 ? 'bg-burnt-sienna/20 text-burnt-sienna' :
-                      techIndex % 4 === 1 ? 'bg-olive-green/20 text-olive-green' :
-                      techIndex % 4 === 2 ? 'bg-muted-purple/20 text-muted-purple' :
-                      'bg-charcoal-gray/20 text-charcoal-gray'
+                      techIndex % 4 === 0
+                        ? 'bg-burnt-sienna/20 text-burnt-sienna'
+                        : techIndex % 4 === 1
+                        ? 'bg-olive-green/20 text-olive-green'
+                        : techIndex % 4 === 2
+                        ? 'bg-muted-purple/20 text-muted-purple'
+                        : 'bg-charcoal-gray/20 text-charcoal-gray'
                     }`}
                   >
                     {tech}
@@ -137,15 +142,17 @@ const Projects = () => {
                   <Github size={16} />
                   <span>Code</span>
                 </a>
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center space-x-2 text-charcoal-gray hover:text-burnt-sienna transition-colors"
-                >
-                  <ExternalLink size={16} />
-                  <span>Live Demo</span>
-                </a>
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-2 text-charcoal-gray hover:text-burnt-sienna transition-colors"
+                  >
+                    <ExternalLink size={16} />
+                    <span>Live Demo</span>
+                  </a>
+                )}
               </div>
             </div>
           ))}
