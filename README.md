@@ -32,37 +32,6 @@
 
 ---
 
-## ✨ **What Makes This Portfolio Special?**
-
-<table>
-<tr>
-<td width="50%">
-
-### 🎯 **Core Features**
-- 🎨 **Sleek & Minimal Design** - Clean aesthetics that let content shine
-- 📱 **Mobile-First Responsive** - Perfect on any device, any screen size
-- 🌙 **Dark Mode Toggle** - Switch themes for optimal viewing comfort
-- ⚡ **Lightning Fast** - Optimized performance with Vite bundling
-- 🔗 **Interactive Elements** - Smooth animations and engaging UI
-- 💌 **Smart Contact Form** - Powered by EmailJS for seamless communication
-
-</td>
-<td width="50%">
-
-### 🚀 **Technical Highlights**
-- ⚛️ **React 18** - Latest features and best practices
-- 🎨 **Tailwind CSS** - Utility-first styling for rapid development
-- 🛠️ **Component Architecture** - Modular, reusable, and maintainable
-- 📧 **EmailJS Integration** - No backend needed for contact forms
-- 🌐 **GitHub Pages Ready** - Easy deployment and hosting
-- 🔧 **Modern Tooling** - ESLint, Prettier, and hot module replacement
-
-</td>
-</tr>
-</table>
-
----
-
 ## 🖼️ **Portfolio Showcase**
 
 <div align="center">
